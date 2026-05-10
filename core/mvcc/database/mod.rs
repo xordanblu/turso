@@ -75,7 +75,7 @@ const NO_EXCLUSIVE_TX: u64 = 0;
 pub struct MVTableId(i64);
 
 /// The versions of a single row
-pub type RowVersions = Arc<RwLock<Vec<RowVersion>>>;
+type RowVersions = Arc<RwLock<Vec<RowVersion>>>;
 
 impl MVTableId {
     pub fn new(value: i64) -> Self {
